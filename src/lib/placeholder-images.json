@@ -15,7 +15,7 @@
     {
       "id": "category-home",
       "description": "Image for the home goods category with African decor",
-      "imageUrl": "https://images.unsplash.com/photo-1632759261935-db1e2c24d125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxBZnJpY2FuJTIwZGVjb3J8ZW58MHx8fHwxNzYyNDMxOTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1632759261935-db1e2c24d125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxBZnJpY2FuJTIwZGVjb3J8ZW58MHx8fHwxNzYyNDMxOTE1fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "African decor"
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": "product-tote-1",
       "description": "Front view of the Artisan Leather Tote held by a Black woman",
-      "imageUrl": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCbGFjayUyMHdvbWFuJTIwbGVhdGhlciUyMGhhbmRiYWd8ZW58MHx8fHwxNzYyOTE5ODk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxCbGFjayUyMHdvbWFuJTIwbGVhdGhlciUyMGhhbmRiYWd8ZW58MHx8fHwxNzYyOTE5ODk2fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "woman handbag"
     },
     {
@@ -39,13 +39,13 @@
     {
       "id": "product-tote-3",
       "description": "Interior of an Ankara print bag",
-      "imageUrl": "https://images.unsplash.com/photo-1562159846-5df263a6f194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBbmthcmElMjBwcmludCUyMGJhZ3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1562159846-5df263a6f194?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBbmthcmElMjBwcmludCUyMGJhZ3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Ankara bag"
     },
     {
       "id": "product-clock-1",
       "description": "An Afrocentric wall clock",
-      "imageUrl": "https://images.unsplash.com/photo-1600989993222-965324403683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZnJvY2VudHJpYyUyMGNsb2NrfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1600989993222-965324403683?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZnJvY2VudHJpYyUyMGNsb2NrfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Afrocentric clock"
     },
     {
@@ -57,7 +57,7 @@
     {
       "id": "product-scarf-1",
       "description": "Folded Kikoy fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1620755749767-464c805a549e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLaWtheSUyMGZhYnJpY3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1620755749767-464c805a549e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLaWtheSUyMGZhYnJpY3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Kikoy fabric"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "product-planter-1",
       "description": "Set of terracotta planters",
-      "imageUrl": "https://images.unsplash.com/photo-1599184152200-802b9f4a0e1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwcG90c3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1599184152200-802b9f4a0e1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZXJyYWNvdHRhJTIwcG90c3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "terracotta pots"
     },
     {
@@ -81,13 +81,13 @@
     {
       "id": "product-necklace-1",
       "description": "A colorful beaded necklace",
-      "imageUrl": "https://images.unsplash.com/photo-1588444968369-a681de015a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFkZWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1588444968369-a681de015a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFkZWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "beaded necklace"
     },
     {
       "id": "product-necklace-2",
       "description": "Close-up of Kazuri beads",
-      "imageUrl": "https://images.unsplash.com/photo-1589409947413-58e5a4985652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYXp1cmklMjBiZWFkc3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1589409947413-58e5a4985652?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLYXp1cmklMjBiZWFkc3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Kazuri beads"
     },
     {
@@ -105,49 +105,49 @@
     {
       "id": "brand-aura",
       "description": "Aura brand logo with an African design",
-      "imageUrl": "https://images.unsplash.com/photo-1649984954492-5b7902d29e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwZGVzaWduJTIwbG9nb3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622988694525-2331c2be44dd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxBZnJpY2FuJTIwbG9nb3xlbnwwfHx8fDE3NjI0MzIwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "African logo"
     },
     {
       "id": "brand-stellar",
       "description": "Stellar brand logo in gold",
-      "imageUrl": "https://images.unsplash.com/photo-16125509938 Megh-geometrical-pattern-in-gold-and-black?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwZ2VvbWV0cmljJTIwbG9nb3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1706571717924-934a8a7c2aa7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxnb2xkJTIwbG9nb3xlbnwwfHx8fDE3NjI0MzIwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gold logo"
     },
     {
       "id": "brand-momentum",
       "description": "Momentum brand logo, bold and geometric",
-      "imageUrl": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxib2xkJTIwZ2VvbWV0cmljJTIwYWJzdHJhY3R8ZW58MHx8fHwxNzYyOTE5ODk2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759265844937-04cd4d4ea9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib2xkJTIwZ2VvbWV0cmljfGVufDB8fHx8MTc2MjM1ODkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bold geometric"
     },
     {
       "id": "brand-vertex",
       "description": "Vertex brand logo with triangles",
-      "imageUrl": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmlhbmdsZSUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1566130729195-6b54084f0ab1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx0cmlhbmdsZSUyMGxvZ298ZW58MHx8fHwxNzYyMzkyNzExfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "triangle logo"
     },
     {
       "id": "brand-evolve",
       "description": "Evolve brand logo with a nature theme",
-      "imageUrl": "https://images.unsplash.com/photo-1611117775523-51b0664654e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662052955282-da15376f3919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjQxNjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "nature logo"
     },
     {
       "id": "brand-legacy",
       "description": "Legacy brand logo, classic design",
-      "imageUrl": "https://images.unsplash.com/photo-1567446537754-ac4545c93298?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjbGFzc2ljJTIwZGVzaWdufGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533898301026-0a2546b285e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwZGVzaWdufGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic design"
     },
     {
       "id": "brand-apex",
       "description": "Apex brand logo, sharp and modern",
-      "imageUrl": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzaGFycCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1504717821152-66ca3db3ed8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFycCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sharp abstract"
     },
     {
       "id": "brand-nova",
       "description": "Nova brand logo, bright and futuristic",
-      "imageUrl": "https://images.unsplash.com/photo-1535378620166-273708d44e4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmlnaHQlMjBmdXR1cmlzdGljfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib-v=4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1654722439127-0645ad92650b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmlnaHQlMjBmdXR1cmlzdGljfGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bright futuristic"
     }
   ]
