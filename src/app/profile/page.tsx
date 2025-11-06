@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ChangeEvent } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/auth-context';
 import {
@@ -11,7 +11,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { User, Mail, Phone, Home } from 'lucide-react';
+import { User, Mail, Phone, Home, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -80,13 +80,24 @@ export default function ProfilePage() {
     setAvatarUrl(user.avatarUrl || '');
   }
 
+  const handleAvatarChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setAvatarUrl(reader.result as string);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
+
   return (
     <div className="container py-12 md:py-24">
       <Card className="max-w-2xl mx-auto">
         <CardHeader>
           <div className="flex items-center gap-4">
             <Avatar className="h-16 w-16">
-              {user.avatarUrl ? <AvatarImage src={user.avatarUrl} alt={user.name} /> : null}
+              {avatarUrl ? <AvatarImage src={avatarUrl} alt={user.name} /> : null}
               <AvatarFallback className="text-2xl">
                 {user.name.charAt(0).toUpperCase()}
               </AvatarFallback>
@@ -117,14 +128,28 @@ export default function ProfilePage() {
             {isEditing ? (
               <div className="space-y-4 pt-4 border-t">
                 <div>
-                  <Label htmlFor="avatarUrl">Profile Picture URL</Label>
-                  <Input
-                    id="avatarUrl"
-                    value={avatarUrl}
-                    onChange={(e) => setAvatarUrl(e.target.value)}
-                    placeholder="https://example.com/your-image.png"
-                    className="mt-1"
-                  />
+                  <Label htmlFor="avatar-upload">Profile Picture</Label>
+                  <div className="flex items-center gap-4 mt-1">
+                      <Avatar className="h-12 w-12">
+                          {avatarUrl ? <AvatarImage src={avatarUrl} /> : null}
+                          <AvatarFallback>
+                              <User />
+                          </AvatarFallback>
+                      </Avatar>
+                      <Input
+                          id="avatar-upload"
+                          type="file"
+                          accept="image/*"
+                          onChange={handleAvatarChange}
+                          className="hidden"
+                      />
+                      <Button asChild variant="outline">
+                          <label htmlFor="avatar-upload" className="cursor-pointer">
+                              <Upload className="mr-2 h-4 w-4" />
+                              Upload Image
+                          </label>
+                      </Button>
+                  </div>
                 </div>
                 <div>
                   <Label htmlFor="phone">Phone Number</Label>
