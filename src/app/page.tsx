@@ -3,14 +3,13 @@ import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { categories, products } from '@/lib/data';
+import { categories } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { ProductCard } from '@/components/product/product-card';
 import { ArrowRight } from 'lucide-react';
+import { FilteredProductList } from '@/components/home/filtered-product-list';
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
-  const popularProducts = products.filter(p => p.tags?.includes('popular')).slice(0, 4);
 
   return (
     <div className="flex flex-col">
@@ -84,19 +83,7 @@ export default function Home() {
       {/* Popular Products */}
       <section className="py-16 md:py-24 bg-secondary/50">
         <div className="container">
-          <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
-            Popular Right Now
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {popularProducts.map(product => (
-              <ProductCard key={product.id} product={product} />
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg">
-              <Link href="/collections/fashion">View All Products</Link>
-            </Button>
-          </div>
+          <FilteredProductList />
         </div>
       </section>
     </div>
