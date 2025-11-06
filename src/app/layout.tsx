@@ -9,6 +9,7 @@ import { Footer } from '@/components/layout/footer';
 import { cn } from '@/lib/utils';
 import { usePathname } from 'next/navigation';
 import { useEffect } from 'react';
+import { Preloader } from '@/components/layout/preloader';
 
 function ActivityTracker() {
   const { user } = useAuth();
@@ -47,6 +48,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
+  const isHomePage = pathname === '/';
+
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -59,6 +63,7 @@ export default function RootLayout({
       <body className={cn("font-body antialiased", "min-h-screen bg-background flex flex-col")}>
         <AuthProvider>
           <CartProvider>
+            {isHomePage && <Preloader />}
             <ActivityTracker />
             <Navbar />
             <main className="flex-grow">{children}</main>
