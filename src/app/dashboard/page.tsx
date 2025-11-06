@@ -6,6 +6,7 @@ import { useAuth } from '@/context/auth-context';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { ShoppingBag, Heart, Settings } from 'lucide-react';
 import Link from 'next/link';
+import { ActivityChart } from '@/components/dashboard/activity-chart';
 
 export default function DashboardPage() {
   const router = useRouter();
@@ -70,6 +71,18 @@ export default function DashboardPage() {
               Go to Profile
             </Link>
           </CardContent>
+        </Card>
+      </div>
+
+      <div className="mt-12">
+        <Card>
+            <CardHeader>
+                <CardTitle>Your Activity</CardTitle>
+                <CardDescription>A summary of your recent activity on the site.</CardDescription>
+            </CardHeader>
+            <CardContent>
+                <ActivityChart />
+            </CardContent>
         </Card>
       </div>
     </div>
