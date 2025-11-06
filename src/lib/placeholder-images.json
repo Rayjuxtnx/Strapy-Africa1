@@ -101,6 +101,54 @@
       "description": "Close-up of the fabric of the Linen Shirt",
       "imageUrl": "https://images.unsplash.com/photo-1612538498613-35c5c8d675c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYWJyaWMlMjB0ZXh0dXJlfGVufDB8fHx8MTc2MjQxNjQ0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "fabric texture"
+    },
+    {
+      "id": "brand-aura",
+      "description": "Aura brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1760386129108-d17b9cdfc4fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwbG9nb3xlbnwwfHx8fDE3NjIzNjYzODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern logo"
+    },
+    {
+      "id": "brand-stellar",
+      "description": "Stellar brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1672679136563-7a7b5dae2e39?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlbGVnYW50JTIwbG9nb3xlbnwwfHx8fDE3NjI0MzA2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "elegant logo"
+    },
+    {
+      "id": "brand-momentum",
+      "description": "Momentum brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1674781886175-8f9d98eef927?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib2xkJTIwbG9nb3xlbnwwfHx8fDE3NjIzMzkwNTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bold logo"
+    },
+    {
+      "id": "brand-vertex",
+      "description": "Vertex brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1691737833025-25a098efbeeb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnZW9tZXRyaWMlMjBsb2dvfGVufDB8fHx8MTc2MjM4MDMyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "geometric logo"
+    },
+    {
+      "id": "brand-evolve",
+      "description": "Evolve brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1760037028553-3c5c801f18c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtaW5pbWFsaXN0JTIwbG9nb3xlbnwwfHx8fDE3NjIzMTYwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "minimalist logo"
+    },
+    {
+      "id": "brand-legacy",
+      "description": "Legacy brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1742226111092-d50bc187ff0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxjbGFzc2ljJTIwbG9nb3xlbnwwfHx8fDE3NjI0MzA2NTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "classic logo"
+    },
+    {
+      "id": "brand-apex",
+      "description": "Apex brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1650107643594-0b51aa378450?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFycCUyMGxvZ298ZW58MHx8fHwxNzYyNDMwNjU4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sharp logo"
+    },
+    {
+      "id": "brand-nova",
+      "description": "Nova brand logo",
+      "imageUrl": "https://images.unsplash.com/photo-1607270788732-55d2cdb8f52a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxicmlnaHQlMjBsb2dvfGVufDB8fHx8MTc2MjQzMDY1OHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bright logo"
     }
   ]
 }

@@ -1,4 +1,5 @@
-import type { Category, Product } from '@/lib/types';
+
+import type { Category, Product, Brand } from '@/lib/types';
 
 export const categories: Category[] = [
   {
@@ -91,4 +92,15 @@ export const products: Product[] = [
       Color: ['White', 'Sky Blue', 'Khaki'],
     },
   },
+];
+
+export const brands: Brand[] = [
+  { id: 'brand_001', name: 'Aura', logoImageId: 'brand-aura' },
+  { id: 'brand_002', name: 'Stellar', logoImageId: 'brand-stellar' },
+  { id: 'brand_003', name: 'Momentum', logoImageId: 'brand-momentum' },
+  { id: 'brand_004', name: 'Vertex', logoImageId: 'brand-vertex' },
+  { id: 'brand_005', name: 'Evolve', logoImageId: 'brand-evolve' },
+  { id: 'brand_006', name: 'Legacy', logoImageId: 'brand-legacy' },
+  { id: 'brand_007', name: 'Apex', logoImageId: 'brand-apex' },
+  { id: 'brand_008', name: 'Nova', logoImageId: 'brand-nova' },
 ];

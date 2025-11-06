@@ -1,3 +1,4 @@
+
 export type Product = {
   id: string;
   name: string;
@@ -36,3 +37,9 @@ export type User = {
   billingAddress?: string;
   avatarUrl?: string;
 };
+
+export type Brand = {
+  id: string;
+  name: string;
+  logoImageId: string;
+}

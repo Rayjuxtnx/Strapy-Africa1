@@ -1,44 +1,98 @@
+
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRef } from 'react';
+import Autoplay from "embla-carousel-autoplay";
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { categories } from '@/lib/data';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { categories, brands } from '@/lib/data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { ArrowRight } from 'lucide-react';
 import { FilteredProductList } from '@/components/home/filtered-product-list';
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(img => img.id === 'hero-bg');
+
+  const heroSlides = [
+    {
+      id: 'hero-bg',
+      title: 'Curated Finds',
+      subtitle: 'Discover unique collections, hand-picked for the discerning eye.',
+      buttonText: 'Shop Now',
+      buttonLink: '/collections/fashion',
+    },
+    {
+      id: 'category-home',
+      title: 'New Home Collection',
+      subtitle: 'Elevate your space with our latest arrivals.',
+      buttonText: 'Explore Home Goods',
+      buttonLink: '/collections/home-goods',
+    },
+    {
+      id: 'category-accessories',
+      title: 'Accessorize Your Style',
+      subtitle: 'Find the perfect finishing touch.',
+      buttonText: 'View Accessories',
+      buttonLink: '/collections/accessories',
+    },
+  ];
 
   return (
     <div className="flex flex-col">
-      {/* Hero Section */}
-      <section className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center text-white">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            priority
-            data-ai-hint={heroImage.imageHint}
-          />
-        )}
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-2xl px-4 flex flex-col items-center">
-          <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight">
-            Curated Finds
-          </h1>
-          <p className="mt-4 text-lg md:text-xl text-white/90">
-            Discover unique collections, hand-picked for the discerning eye.
-          </p>
-          <Button asChild size="lg" className="mt-8 bg-white text-black hover:bg-white/90">
-            <Link href="/collections/fashion">
-              Shop Now <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
+      {/* Hero Section Carousel */}
+      <section className="relative w-full">
+        <Carousel
+          plugins={[Autoplay({ delay: 5000, stopOnInteraction: true })]}
+          className="w-full"
+          opts={{ loop: true }}
+        >
+          <CarouselContent>
+            {heroSlides.map((slide) => {
+              const slideImage = PlaceHolderImages.find(img => img.id === slide.id);
+              return (
+                <CarouselItem key={slide.id}>
+                  <div className="relative h-[60vh] md:h-[70vh] w-full flex items-center justify-center text-center text-white">
+                    {slideImage && (
+                      <Image
+                        src={slideImage.imageUrl}
+                        alt={slide.title}
+                        fill
+                        className="object-cover"
+                        priority={slide.id === 'hero-bg'}
+                        data-ai-hint={slideImage.imageHint}
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="relative z-10 max-w-2xl px-4 flex flex-col items-center">
+                      <h1 className="font-headline text-5xl md:text-7xl font-bold tracking-tight">
+                        {slide.title}
+                      </h1>
+                      <p className="mt-4 text-lg md:text-xl text-white/90">
+                        {slide.subtitle}
+                      </p>
+                      <Button asChild size="lg" className="mt-8 bg-white text-black hover:bg-white/90">
+                        <Link href={slide.buttonLink}>
+                          {slide.buttonText} <ArrowRight className="ml-2 h-4 w-4" />
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </CarouselItem>
+              );
+            })}
+          </CarouselContent>
+          <CarouselPrevious className="absolute left-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+          <CarouselNext className="absolute right-4 top-1/2 -translate-y-1/2 z-10 hidden md:flex" />
+        </Carousel>
       </section>
 
       {/* Featured Categories */}
@@ -77,6 +131,52 @@ export default function Home() {
               );
             })}
           </div>
+        </div>
+      </section>
+      
+      {/* Featured Brands */}
+      <section className="py-16 md:py-24 bg-background">
+        <div className="container">
+           <h2 className="text-3xl md:text-4xl font-headline font-bold text-center mb-12">
+            Featured Brands
+          </h2>
+          <Carousel
+            opts={{
+              align: "start",
+              loop: true,
+            }}
+            plugins={[
+                Autoplay({
+                  delay: 3000,
+                  stopOnInteraction: false,
+                })
+              ]}
+            className="w-full"
+          >
+            <CarouselContent>
+              {brands.map((brand) => {
+                const brandImage = PlaceHolderImages.find(img => img.id === brand.logoImageId);
+                return (
+                  <CarouselItem key={brand.id} className="basis-1/3 md:basis-1/4 lg:basis-1/6">
+                    <div className="p-1">
+                      {brandImage && (
+                        <div className="relative h-20 flex items-center justify-center">
+                          <Image
+                            src={brandImage.imageUrl}
+                            alt={brand.name}
+                            width={120}
+                            height={40}
+                            className="object-contain"
+                            data-ai-hint={brandImage.imageHint}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </CarouselItem>
+                );
+              })}
+            </CarouselContent>
+          </Carousel>
         </div>
       </section>
 
