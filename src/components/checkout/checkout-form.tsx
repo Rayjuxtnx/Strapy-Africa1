@@ -127,7 +127,7 @@ export function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Phone Number</FormLabel>
                   <FormControl>
-                    <Input placeholder="+1 234 567 890" {...field} />
+                    <Input placeholder="+254 712 345 678" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -140,7 +140,7 @@ export function CheckoutForm() {
                 <FormItem>
                   <FormLabel>Shipping Address</FormLabel>
                   <FormControl>
-                    <Input placeholder="123 Main St, Anytown, USA" {...field} />
+                    <Input placeholder="123 Moi Avenue, Nairobi" {...field} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>

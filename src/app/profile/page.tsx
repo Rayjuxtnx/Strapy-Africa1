@@ -157,7 +157,7 @@ export default function ProfilePage() {
                     id="phone"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    placeholder="e.g. +1 555-123-4567"
+                    placeholder="e.g. +254 712 345 678"
                     className="mt-1"
                   />
                 </div>
@@ -167,7 +167,7 @@ export default function ProfilePage() {
                     id="billingAddress"
                     value={billingAddress}
                     onChange={(e) => setBillingAddress(e.target.value)}
-                    placeholder="123 Curated Way, Style City, 10101"
+                    placeholder="e.g. 123 Moi Avenue, Nairobi"
                     className="mt-1"
                   />
                 </div>
