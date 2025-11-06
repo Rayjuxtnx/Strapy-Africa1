@@ -23,6 +23,8 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
+import { useAuth } from '@/context/auth-context';
+import { useEffect } from 'react';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -38,6 +40,7 @@ export function CheckoutForm() {
   const router = useRouter();
   const { cartItems, cartTotal, clearCart } = useCart();
   const { toast } = useToast();
+  const { user } = useAuth();
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -49,6 +52,18 @@ export function CheckoutForm() {
       paymentMethod: undefined,
     },
   });
+
+  useEffect(() => {
+    if (user) {
+      form.reset({
+        name: user.name || '',
+        email: user.email || '',
+        phone: user.phone || '',
+        address: user.billingAddress || '',
+        paymentMethod: form.getValues('paymentMethod'),
+      });
+    }
+  }, [user, form]);
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log('Order submitted:', values);
