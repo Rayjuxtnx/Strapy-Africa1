@@ -10,6 +10,7 @@ interface AuthContextType {
   signup: (name: string, email: string) => boolean;
   logout: () => void;
   isAuthenticated: boolean;
+  updateUser: (updatedUser: User) => boolean;
 }
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
@@ -82,9 +83,22 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     localStorage.removeItem("user");
     toast({ title: "Logged Out", description: "You have been successfully logged out." });
   };
+  
+  const updateUser = (updatedUser: User) => {
+    try {
+      setUser(updatedUser);
+      localStorage.setItem("user", JSON.stringify(updatedUser));
+      localStorage.setItem(`user_${updatedUser.email}`, JSON.stringify(updatedUser));
+      return true;
+    } catch (error) {
+      console.error("Failed to update user", error);
+      toast({ variant: "destructive", title: "Update Failed", description: "Could not update your profile." });
+      return false;
+    }
+  };
 
   return (
-    <AuthContext.Provider value={{ user, login, signup, logout, isAuthenticated: !!user }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, isAuthenticated: !!user, updateUser }}>
       {children}
     </AuthContext.Provider>
   );
