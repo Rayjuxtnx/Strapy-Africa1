@@ -9,19 +9,19 @@
     {
       "id": "category-fashion",
       "description": "Image for the fashion category showing stylish Kenyan fashion",
-      "imageUrl": "https://images.unsplash.com/photo-1534778619992-614187f61136?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxLZW55YW4lMjBmYXNoaW9ufGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598602692077-7ef014d41f86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxLZW55YW4lMjBmYXNoaW9ufGVufDB8fHx8MTc2MjQzMTkxNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Kenyan fashion"
     },
     {
       "id": "category-home",
       "description": "Image for the home goods category with African decor",
-      "imageUrl": "https://images.unsplash.com/photo-1620392193657-349a85942456?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwaG9tZSUyMGRlY29yfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080_1",
+      "imageUrl": "https://images.unsplash.com/photo-1632759261935-db1e2c24d125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxBZnJpY2FuJTIwZGVjb3J8ZW58MHx8fHwxNzYyNDMxOTE1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "African decor"
     },
     {
       "id": "category-accessories",
       "description": "Image for the accessories category showing Maasai beads",
-      "imageUrl": "https://images.unsplash.com/photo-1529528765345-d486e90235f4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxNYWFzYWklMjBiZWFkc3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1580688856177-37408becf06a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxNYWFzYWklMjBiZWFkc3xlbnwwfHx8fDE3NjI0MzE5MTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Maasai beads"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "product-scarf-2",
       "description": "A woman wearing a Leso scarf",
-      "imageUrl": "https://images.unsplash.com/photo-1533560731435-4509459345c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLZXNvJTIwc2NhcmYlMjB3b21hbnxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533560731435-4509459345c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLZXNvJTIwc2NhcmYlMjB3b21hbnxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Leso scarf"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "product-planter-2",
       "description": "An aloe vera plant in a pot",
-      "imageUrl": "https://images.unsplash.com/photo-1509423350717-cde539992359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMGluJTIwYSUyMHBvdHxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1509423350717-cde539992359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMGluJTIwYSUyMHBvdHxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "aloe vera"
     },
     {
@@ -105,13 +105,13 @@
     {
       "id": "brand-aura",
       "description": "Aura brand logo with an African design",
-      "imageUrl": "https://images.unsplash.com/photo-1649984954492-5b7902d29e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwZGVzaWduJTIwbG9nb3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1649984954492-5b7902d29e3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxBZnJpY2FuJTIwZGVzaWduJTIwbG9nb3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "African logo"
     },
     {
       "id": "brand-stellar",
       "description": "Stellar brand logo in gold",
-      "imageUrl": "https://images.unsplash.com/photo-16125509938 Megh-geometrical-pattern-in-gold-and-black?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwZ2VvbWV0cmljJTIwbG9nb3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-16125509938 Megh-geometrical-pattern-in-gold-and-black?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxnb2xkJTIwZ2VvbWV0cmljJTIwbG9nb3xlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "gold logo"
     },
     {
@@ -123,13 +123,13 @@
     {
       "id": "brand-vertex",
       "description": "Vertex brand logo with triangles",
-      "imageUrl": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmlhbmdsZSUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cmlhbmdsZSUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "triangle logo"
     },
     {
       "id": "brand-evolve",
       "description": "Evolve brand logo with a nature theme",
-      "imageUrl": "https://images.unsplash.com/photo-1611117775523-51b0664654e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611117775523-51b0664654e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjkxOTg5Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "nature logo"
     },
     {
