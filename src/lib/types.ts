@@ -7,7 +7,7 @@ export type Product = {
   images: string[];
   price: number;
   category: string;
-  tags?: ('popular' | 'new')[];
+  tags?: ('popular' | 'new' | 'popular-this-week' | 'on-offer')[];
   options?: {
     [key: string]: string[];
   };

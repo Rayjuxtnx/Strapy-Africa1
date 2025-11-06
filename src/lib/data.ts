@@ -31,7 +31,7 @@ export const products: Product[] = [
     images: ['product-tote-1', 'product-tote-2', 'product-tote-3'],
     price: 189.99,
     category: 'fashion',
-    tags: ['popular', 'new'],
+    tags: ['popular', 'new', 'popular-this-week'],
     options: {
       Color: ['Brown', 'Black', 'Tan'],
     },
@@ -44,7 +44,7 @@ export const products: Product[] = [
     images: ['product-clock-1', 'product-clock-2'],
     price: 79.50,
     category: 'home-goods',
-    tags: ['popular'],
+    tags: ['popular', 'on-offer'],
   },
   {
     id: 'prod_003',
@@ -54,7 +54,7 @@ export const products: Product[] = [
     images: ['product-scarf-1', 'product-scarf-2'],
     price: 49.99,
     category: 'accessories',
-    tags: ['new'],
+    tags: ['new', 'on-offer'],
     options: {
       Pattern: ['Floral', 'Geometric', 'Abstract'],
     },
@@ -67,7 +67,7 @@ export const products: Product[] = [
     images: ['product-planter-1', 'product-planter-2'],
     price: 55.00,
     category: 'home-goods',
-    tags: ['popular'],
+    tags: ['popular', 'popular-this-week'],
   },
   {
     id: 'prod_005',
@@ -77,6 +77,7 @@ export const products: Product[] = [
     images: ['product-necklace-1', 'product-necklace-2'],
     price: 125.00,
     category: 'accessories',
+    tags: ['on-offer'],
   },
   {
     id: 'prod_006',
@@ -86,7 +87,7 @@ export const products: Product[] = [
     images: ['product-shirt-1', 'product-shirt-2'],
     price: 85.00,
     category: 'fashion',
-    tags: ['popular'],
+    tags: ['popular', 'new'],
     options: {
       Size: ['S', 'M', 'L', 'XL'],
       Color: ['White', 'Sky Blue', 'Khaki'],

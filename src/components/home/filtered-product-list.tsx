@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useState } from 'react';
@@ -7,8 +8,10 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
+type TagSlug = 'all' | 'popular' | 'new' | 'popular-this-week' | 'on-offer';
+
 export function FilteredProductList() {
-  const [selectedTag, setSelectedTag] = useState<'popular' | 'new' | 'all'>('all');
+  const [selectedTag, setSelectedTag] = useState<TagSlug>('all');
 
   const allProducts = products;
   
@@ -16,10 +19,12 @@ export function FilteredProductList() {
     ? allProducts.slice(0, 4)
     : allProducts.filter(p => p.tags?.includes(selectedTag)).slice(0, 4);
 
-  const availableTags: { slug: 'all' | 'popular' | 'new', name: string }[] = [
+  const availableTags: { slug: TagSlug, name: string }[] = [
     { slug: 'all', name: 'All' },
     { slug: 'popular', name: 'Popular' },
-    { slug: 'new', name: 'New Arrivals' }
+    { slug: 'new', name: 'New Arrivals' },
+    { slug: 'popular-this-week', name: 'Popular This Week' },
+    { slug: 'on-offer', name: 'On Offer' },
   ];
 
   return (
