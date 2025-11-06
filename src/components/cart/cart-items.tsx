@@ -2,16 +2,33 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import { Minus, Plus, Trash2, X } from 'lucide-react';
+import { useRouter } from 'next/navigation';
+import { Minus, Plus, Trash2 } from 'lucide-react';
 import { useCart } from '@/context/cart-context';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { formatPrice } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
+import { useAuth } from '@/context/auth-context';
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
+import { useState } from 'react';
 
 export function CartItems() {
   const { cartItems, removeFromCart, updateQuantity, cartTotal, itemCount } = useCart();
+  const { isAuthenticated } = useAuth();
+  const router = useRouter();
+  const [showGuestPrompt, setShowGuestPrompt] = useState(false);
 
   if (itemCount === 0) {
     return (
@@ -25,6 +42,13 @@ export function CartItems() {
         </Button>
       </div>
     );
+  }
+
+  const handleCheckoutClick = (e: React.MouseEvent) => {
+    if (!isAuthenticated) {
+      e.preventDefault();
+      setShowGuestPrompt(true);
+    }
   }
 
   return (
@@ -106,9 +130,32 @@ export function CartItems() {
             </div>
           </CardContent>
           <CardFooter>
-            <Button asChild size="lg" className="w-full">
-              <Link href="/checkout">Proceed to Checkout</Link>
-            </Button>
+             <AlertDialog open={showGuestPrompt} onOpenChange={setShowGuestPrompt}>
+                <Button asChild size="lg" className="w-full">
+                  <Link href="/checkout" onClick={handleCheckoutClick}>Proceed to Checkout</Link>
+                </Button>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Continue as Guest or Sign Up?</AlertDialogTitle>
+                    <AlertDialogDescription>
+                      Create an account to track your orders, see your activity, and enjoy a faster checkout next time.
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter className="sm:justify-center gap-2">
+                    <AlertDialogCancel onClick={() => router.push('/checkout')}>
+                      Continue as Guest
+                    </AlertDialogCancel>
+                    <div className="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+                      <Button asChild variant="outline" className="w-full">
+                        <Link href="/login?redirect=/checkout">Login</Link>
+                      </Button>
+                      <AlertDialogAction asChild>
+                        <Link href="/signup?redirect=/checkout">Sign Up</Link>
+                      </AlertDialogAction>
+                    </div>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
           </CardFooter>
         </Card>
       </div>

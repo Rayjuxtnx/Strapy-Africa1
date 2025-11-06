@@ -3,7 +3,7 @@
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
 import { z } from 'zod';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 
 import { Button } from '@/components/ui/button';
@@ -25,6 +25,7 @@ const formSchema = z.object({
 
 export default function LoginPage() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { login } = useAuth();
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -35,8 +36,9 @@ export default function LoginPage() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
+    const redirectUrl = searchParams.get('redirect') || '/profile';
     if (login(values.email)) {
-      router.push('/profile');
+      router.push(redirectUrl);
     }
   }
 
