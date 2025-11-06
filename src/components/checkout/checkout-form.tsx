@@ -24,7 +24,8 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Separator } from '../ui/separator';
 import { useAuth } from '@/context/auth-context';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { Loader2 } from 'lucide-react';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -41,6 +42,7 @@ export function CheckoutForm() {
   const { cartItems, cartTotal, clearCart } = useCart();
   const { toast } = useToast();
   const { user } = useAuth();
+  const [isLoading, setIsLoading] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -65,17 +67,62 @@ export function CheckoutForm() {
     }
   }, [user, form]);
 
+  async function handleMpesaPayment(values: z.infer<typeof formSchema>) {
+    setIsLoading(true);
+    try {
+      const response = await fetch('/api/mpesa', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          amount: Math.round(cartTotal), // M-Pesa requires an integer
+          phone: values.phone,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        throw new Error(result.message || 'M-Pesa payment failed.');
+      }
+      
+      toast({
+        title: 'STK Push Sent',
+        description: 'Please check your phone to complete the M-Pesa payment.',
+      });
+      
+      // Usually, you'd wait for a webhook confirmation before clearing cart and redirecting.
+      // For this example, we'll proceed optimistically.
+      clearCart();
+      router.push('/checkout/success');
+
+    } catch (error: any) {
+      toast({
+        variant: 'destructive',
+        title: 'Payment Error',
+        description: error.message || 'An unexpected error occurred with M-Pesa.',
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log('Order submitted:', values);
-    toast({
-      title: 'Order Placed!',
-      description: 'Thank you for your purchase. Your order is being processed.',
-    });
-    clearCart();
-    router.push('/checkout/success');
+    if (values.paymentMethod === 'mpesa') {
+        handleMpesaPayment(values);
+    } else {
+        // Handle other payment methods
+        console.log('Order submitted with non-Mpesa payment:', values);
+        toast({
+        title: 'Order Placed!',
+        description: 'Thank you for your purchase. Your order is being processed.',
+        });
+        clearCart();
+        router.push('/checkout/success');
+    }
   }
   
-  if (cartItems.length === 0) {
+  if (cartItems.length === 0 && !isLoading) {
     return (
         <div className="text-center py-16">
             <h2 className="text-2xl font-bold">Your cart is empty</h2>
@@ -157,6 +204,7 @@ export function CheckoutForm() {
                       onValueChange={field.onChange}
                       defaultValue={field.value}
                       className="flex flex-col space-y-2"
+                      disabled={isLoading}
                     >
                       {[
                         { value: 'mpesa', label: 'M-Pesa' },
@@ -177,8 +225,9 @@ export function CheckoutForm() {
               )}
             />
 
-            <Button type="submit" size="lg" className="w-full">
-              Place Order - {formatPrice(cartTotal)}
+            <Button type="submit" size="lg" className="w-full" disabled={isLoading}>
+              {isLoading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+              {isLoading ? 'Processing...' : `Place Order - ${formatPrice(cartTotal)}`}
             </Button>
           </form>
         </Form>
