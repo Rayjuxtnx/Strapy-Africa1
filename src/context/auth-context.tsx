@@ -88,6 +88,7 @@ export const AuthProvider = ({ children }: { children: ReactNode }) => {
     try {
       setUser(updatedUser);
       localStorage.setItem("user", JSON.stringify(updatedUser));
+      // Also update the user-specific record
       localStorage.setItem(`user_${updatedUser.email}`, JSON.stringify(updatedUser));
       return true;
     } catch (error) {
