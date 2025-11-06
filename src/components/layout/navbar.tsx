@@ -1,18 +1,24 @@
+'use client';
+
 import Link from 'next/link';
-import { Menu, Package2 } from 'lucide-react';
+import { Menu, Package2, User } from 'lucide-react';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
+  DropdownMenuSeparator,
 } from '@/components/ui/dropdown-menu';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { categories } from '@/lib/data';
 import { CartIcon } from '@/components/cart/cart-icon';
 import { Logo } from '../logo';
+import { useAuth } from '@/context/auth-context';
 
 export function Navbar() {
+  const { isAuthenticated, user, logout } = useAuth();
+
   const navLinks = [
     { href: '/', label: 'Home' },
     {
@@ -40,22 +46,22 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent side="left">
             <nav className="grid gap-6 text-lg font-medium">
-              <Link href="/" className="flex items-center gap-2 text-lg font-semibold">
+              <Link href="/" className="flex items-center gap-2 text-lg font-semibold mb-4">
                 <Package2 className="h-6 w-6" />
                 <span className="sr-only">Curated Finds</span>
               </Link>
               {navLinks.map(link =>
                 link.isDropdown && link.items ? (
-                  <div key={link.label}>
-                    <p className="text-muted-foreground">{link.label}</p>
+                  <div key={link.label} className="grid gap-2">
+                    <p className="text-muted-foreground px-2">{link.label}</p>
                     {link.items.map(item => (
-                       <Link key={item.href} href={item.href} className="ml-4 block text-muted-foreground hover:text-foreground">
+                       <Link key={item.href} href={item.href} className="ml-4 flex items-center gap-2 text-muted-foreground hover:text-foreground">
                         {item.label}
                        </Link>
                     ))}
                   </div>
                 ) : (
-                  <Link key={link.href} href={link.href!} className="text-muted-foreground hover:text-foreground">
+                  <Link key={link.href} href={link.href!} className="flex items-center gap-2 text-muted-foreground hover:text-foreground">
                     {link.label}
                   </Link>
                 )
@@ -65,7 +71,7 @@ export function Navbar() {
         </Sheet>
         
         {/* Desktop Nav */}
-        <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6 ml-auto">
+        <div className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6 ml-auto">
           {navLinks.map(link =>
             link.isDropdown && link.items ? (
               <DropdownMenu key={link.label}>
@@ -88,10 +94,38 @@ export function Navbar() {
               </Link>
             )
           )}
-        </nav>
+        </div>
 
-        <div className="flex w-full items-center justify-end gap-4 md:ml-auto md:w-auto">
+        <div className="flex w-full items-center justify-end gap-2 md:w-auto">
           <CartIcon />
+          {isAuthenticated ? (
+             <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <User className="h-5 w-5" />
+                    <span className="sr-only">User Profile</span>
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end">
+                  <DropdownMenuItem asChild>
+                    <Link href="/profile">My Profile</Link>
+                  </DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuItem onClick={() => logout()}>
+                    Logout
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+          ) : (
+             <div className="hidden sm:flex items-center gap-2">
+                <Button asChild variant="ghost" size="sm">
+                    <Link href="/login">Login</Link>
+                </Button>
+                <Button asChild size="sm">
+                    <Link href="/signup">Sign Up</Link>
+                </Button>
+            </div>
+          )}
         </div>
       </div>
     </header>
