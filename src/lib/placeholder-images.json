@@ -1,3 +1,106 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Abstract background for hero section",
+      "imageUrl": "https://images.unsplash.com/photo-1548362851-ea052637ad64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMHRleHR1cmV8ZW58MHx8fHwxNzYyNDAxMzkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract texture"
+    },
+    {
+      "id": "category-fashion",
+      "description": "Image for the fashion category",
+      "imageUrl": "https://images.unsplash.com/photo-1761660450845-6c3aa8aaf43f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzdHlsaXNoJTIwY2xvdGhpbmd8ZW58MHx8fHwxNzYyNDI4MjQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "stylish clothing"
+    },
+    {
+      "id": "category-home",
+      "description": "Image for the home goods category",
+      "imageUrl": "https://images.unsplash.com/photo-1724765440530-e3954ac2e61d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8bW9kZXJuJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzYyMzczODA1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern interior"
+    },
+    {
+      "id": "category-accessories",
+      "description": "Image for the accessories category",
+      "imageUrl": "https://images.unsplash.com/photo-1761956256198-af72446e13f5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8d2F0Y2glMjBzdW5nbGFzc2VzfGVufDB8fHx8MTc2MjQyODI0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "watch sunglasses"
+    },
+    {
+      "id": "product-tote-1",
+      "description": "Front view of the Artisan Leather Tote",
+      "imageUrl": "https://images.unsplash.com/photo-1760624295064-2de890f64524?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxsZWF0aGVyJTIwaGFuZGJhZ3xlbnwwfHx8fDE3NjIzNjQwNTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "leather handbag"
+    },
+    {
+      "id": "product-tote-2",
+      "description": "Side view of the Artisan Leather Tote",
+      "imageUrl": "https://images.unsplash.com/photo-1760624294504-211e763ee0fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxoYW5kYmFnJTIwZGV0YWlsfGVufDB8fHx8MTc2MjM4MjcwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "handbag detail"
+    },
+    {
+      "id": "product-tote-3",
+      "description": "Interior of the Artisan Leather Tote",
+      "imageUrl": "https://images.unsplash.com/photo-1742480581981-d3f738874a6c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvcGVuJTIwaGFuZGJhZ3xlbnwwfHx8fDE3NjI0MjgyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "open handbag"
+    },
+    {
+      "id": "product-clock-1",
+      "description": "Front view of the Minimalist Wall Clock",
+      "imageUrl": "https://images.unsplash.com/photo-1552814830-5dd19da25348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjBjbG9ja3xlbnwwfHx8fDE3NjI0MjgyNDd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "modern clock"
+    },
+    {
+      "id": "product-clock-2",
+      "description": "Angled view of the Minimalist Wall Clock",
+      "imageUrl": "https://images.unsplash.com/photo-1612611037037-e6028dbb4ba8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3YWxsJTIwY2xvY2t8ZW58MHx8fHwxNzYyMzMzMDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wall clock"
+    },
+    {
+      "id": "product-scarf-1",
+      "description": "Folded Silk Blend Scarf showing pattern",
+      "imageUrl": "https://images.unsplash.com/photo-1677478989068-38a2f447ab44?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2lsayUyMHNjYXJmfGVufDB8fHx8MTc2MjM5NjAwNXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "silk scarf"
+    },
+    {
+      "id": "product-scarf-2",
+      "description": "Draped Silk Blend Scarf",
+      "imageUrl": "https://images.unsplash.com/photo-1762106515983-6916d1308bb0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxkcmFwZWQlMjBzY2FyZnxlbnwwfHx8fDE3NjI0MjgyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "draped scarf"
+    },
+    {
+      "id": "product-planter-1",
+      "description": "Set of three Ceramic Planters",
+      "imageUrl": "https://images.unsplash.com/photo-1702752432141-10c44dd3c535?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjZXJhbWljJTIwcG90c3xlbnwwfHx8fDE3NjI0MjgyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "ceramic pots"
+    },
+    {
+      "id": "product-planter-2",
+      "description": "Single Ceramic Planter with plant",
+      "imageUrl": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cG90dGVkJTIwcGxhbnR8ZW58MHx8fHwxNzYyNDA5MjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "potted plant"
+    },
+    {
+      "id": "product-necklace-1",
+      "description": "Sterling Silver Necklace with pearl",
+      "imageUrl": "https://images.unsplash.com/photo-1616756351484-798f37bdffa0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVhcmwlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjIzMjc0ODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pearl necklace"
+    },
+    {
+      "id": "product-necklace-2",
+      "description": "Close-up of the pearl pendant",
+      "imageUrl": "https://images.unsplash.com/photo-1762337371111-b4c6197f82eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwZW5kYW50JTIwamV3ZWxyeXxlbnwwfHx8fDE3NjI0MjgyNDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pendant jewelry"
+    },
+    {
+      "id": "product-shirt-1",
+      "description": "Front view of the Linen Button-Down Shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1617117475026-2eb3e68b63cf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxsaW5lbiUyMHNoaXJ0fGVufDB8fHx8MTc2MjM1MzMzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "linen shirt"
+    },
+    {
+      "id": "product-shirt-2",
+      "description": "Close-up of the fabric of the Linen Shirt",
+      "imageUrl": "https://images.unsplash.com/photo-1612538498613-35c5c8d675c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmYWJyaWMlMjB0ZXh0dXJlfGVufDB8fHx8MTc2MjQxNjQ0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fabric texture"
+    }
+  ]
 }
