@@ -15,6 +15,7 @@ import { categories } from '@/lib/data';
 import { CartIcon } from '@/components/cart/cart-icon';
 import { Logo } from '../logo';
 import { useAuth } from '@/context/auth-context';
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
 export function Navbar() {
   const { isAuthenticated, user, logout } = useAuth();
@@ -98,12 +99,14 @@ export function Navbar() {
 
         <div className="flex w-full items-center justify-end gap-2 md:w-auto">
           <CartIcon />
-          {isAuthenticated ? (
+          {isAuthenticated && user ? (
              <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <User className="h-5 w-5" />
-                    <span className="sr-only">User Profile</span>
+                  <Button variant="ghost" className="relative h-8 w-8 rounded-full">
+                    <Avatar className="h-8 w-8">
+                      {user.avatarUrl ? <AvatarImage src={user.avatarUrl} alt={user.name} /> : null}
+                      <AvatarFallback>{user.name?.charAt(0).toUpperCase()}</AvatarFallback>
+                    </Avatar>
                   </Button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
