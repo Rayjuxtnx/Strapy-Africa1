@@ -9,11 +9,13 @@ async function getDarajaToken() {
   }
 
   const auth = Buffer.from(`${consumerKey}:${consumerSecret}`).toString('base64');
-
+  
   const response = await fetch('https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials', {
     headers: {
       'Authorization': `Basic ${auth}`
-    }
+    },
+    // Add cache: 'no-store' to prevent caching of the token
+    cache: 'no-store'
   });
 
   if (!response.ok) {
@@ -37,6 +39,7 @@ export async function POST(request: Request) {
     const token = await getDarajaToken();
     const shortcode = process.env.MPESA_SHORTCODE;
     const passkey = process.env.MPESA_PASSKEY;
+    // Ensure the App URL has the protocol
     const appUrl = process.env.NEXT_PUBLIC_APP_URL;
 
     if (!shortcode || !passkey || !appUrl) {
@@ -46,12 +49,17 @@ export async function POST(request: Request) {
     const timestamp = new Date().toISOString().replace(/[^0-9]/g, '').slice(0, -3);
     const password = Buffer.from(`${shortcode}${passkey}${timestamp}`).toString('base64');
     
-    // Sanitize phone number
-    const sanitizedPhone = phone.startsWith('+') 
-      ? phone.substring(1) 
-      : phone.startsWith('0') 
-      ? `254${phone.substring(1)}` 
-      : phone;
+    // Sanitize phone number to Kenyan format
+    let sanitizedPhone = phone.trim();
+    if (sanitizedPhone.startsWith('+')) {
+      sanitizedPhone = sanitizedPhone.substring(1);
+    } else if (sanitizedPhone.startsWith('0')) {
+      sanitizedPhone = `254${sanitizedPhone.substring(1)}`;
+    }
+
+
+    const callbackUrl = `${appUrl}/api/mpesa/callback`;
+    console.log(`Using Callback URL: ${callbackUrl}`);
 
     const stkPushPayload = {
       BusinessShortCode: shortcode,
@@ -62,7 +70,7 @@ export async function POST(request: Request) {
       PartyA: sanitizedPhone,
       PartyB: shortcode,
       PhoneNumber: sanitizedPhone,
-      CallBackURL: `${appUrl}/api/mpesa/callback`,
+      CallBackURL: callbackUrl,
       AccountReference: "CuratedFinds",
       TransactionDesc: "Payment for goods",
     };
