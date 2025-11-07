@@ -12,7 +12,7 @@ export function Footer() {
 
   const footerLinks = [
     { title: 'Shop', links: [ {label: 'Fashion', href: '/collections/fashion'}, {label: 'Home Goods', href: '/collections/home-goods'}, {label: 'Accessories', href: '/collections/accessories'} ]},
-    { title: 'About', links: [ {label: 'Our Story', href: '#'}, {label: 'Careers', href: '#'} ]},
+    { title: 'About', links: [ {label: 'Our Story', href: '#'}, {label: 'Careers', href: '/careers'} ]},
     { title: 'Support', links: [ {label: 'Contact Us', href: '/contact'}, {label: 'FAQs', href: '/contact'}, {label: 'Returns', href: '#'} ]},
   ];
 
