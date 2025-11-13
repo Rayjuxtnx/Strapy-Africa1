@@ -88,7 +88,18 @@ export function CheckoutForm() {
       };
 
       try {
+        // Save order for receipt page
         localStorage.setItem(orderId, JSON.stringify(newOrder));
+
+        // If user is logged in, save to their order history
+        if (user) {
+          const orderHistoryKey = `orders_${user.id}`;
+          const existingOrdersRaw = localStorage.getItem(orderHistoryKey);
+          const existingOrders: Order[] = existingOrdersRaw ? JSON.parse(existingOrdersRaw) : [];
+          const updatedOrders = [...existingOrders, newOrder];
+          localStorage.setItem(orderHistoryKey, JSON.stringify(updatedOrders));
+        }
+
       } catch (error) {
         console.error("Could not save order to localStorage", error);
         toast({
