@@ -1,3 +1,4 @@
+
 import type {NextConfig} from 'next';
 
 const nextConfig: NextConfig = {
@@ -23,18 +24,13 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
       {
-        protocol: 'https',
+        protocol: 'httpshttps',
         hostname: 'picsum.photos',
         port: '',
         pathname: '/**',
       },
     ],
   },
-  devServer: {
-    allowedDevOrigins: [
-      'https://6000-firebase-studio-1762426801550.cluster-fbfjltn375c6wqxlhoehbz44sk.cloudworkstations.dev',
-    ],
-  }
 };
 
 export default nextConfig;
