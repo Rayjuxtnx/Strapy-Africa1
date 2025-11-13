@@ -16,7 +16,6 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Label } from '@/components/ui/label';
 import { useToast } from '@/hooks/use-toast';
 import { formatPrice } from '@/lib/utils';
 import Image from 'next/image';
@@ -32,7 +31,7 @@ const formSchema = z.object({
   email: z.string().email('Invalid email address.'),
   phone: z.string().min(10, 'Phone number seems too short.'),
   address: z.string().min(5, 'Address must be at least 5 characters.'),
-  paymentMethod: z.enum(['mpesa', 'airtel', 'card'], {
+  paymentMethod: z.enum(['card'], {
     required_error: 'You need to select a payment method.',
   }),
 });
@@ -51,7 +50,7 @@ export function CheckoutForm() {
       email: '',
       phone: '',
       address: '',
-      paymentMethod: undefined,
+      paymentMethod: 'card',
     },
   });
 
@@ -62,64 +61,25 @@ export function CheckoutForm() {
         email: user.email || '',
         phone: user.phone || '',
         address: user.billingAddress || '',
-        paymentMethod: form.getValues('paymentMethod'),
+        paymentMethod: 'card',
       });
     }
   }, [user, form]);
 
-  async function handleMpesaPayment(values: z.infer<typeof formSchema>) {
-    setIsLoading(true);
-    try {
-      const response = await fetch('/api/mpesa', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          amount: Math.round(cartTotal), // M-Pesa requires an integer
-          phone: values.phone,
-        }),
-      });
-
-      const result = await response.json();
-
-      if (!response.ok) {
-        throw new Error(result.message || 'M-Pesa payment failed.');
-      }
-      
-      toast({
-        title: 'STK Push Sent',
-        description: 'Please check your phone to complete the M-Pesa payment.',
-      });
-      
-      // Usually, you'd wait for a webhook confirmation before clearing cart and redirecting.
-      // For this example, we'll proceed optimistically.
-      clearCart();
-      router.push('/checkout/success');
-
-    } catch (error: any) {
-      toast({
-        variant: 'destructive',
-        title: 'Payment Error',
-        description: error.message || 'An unexpected error occurred with M-Pesa.',
-      });
-    } finally {
-      setIsLoading(false);
-    }
-  }
-
-
   function onSubmit(values: z.infer<typeof formSchema>) {
-    if (values.paymentMethod === 'mpesa') {
-        handleMpesaPayment(values);
-    } else {
-        // Handle other payment methods
-        console.log('Order submitted with non-Mpesa payment:', values);
-        toast({
+    setIsLoading(true);
+    console.log('Order submitted:', values);
+    
+    // Simulate order processing
+    setTimeout(() => {
+      toast({
         title: 'Order Placed!',
         description: 'Thank you for your purchase. Your order is being processed.',
-        });
-        clearCart();
-        router.push('/checkout/success');
-    }
+      });
+      clearCart();
+      router.push('/checkout/success');
+      setIsLoading(false);
+    }, 1500);
   }
   
   if (cartItems.length === 0 && !isLoading) {
@@ -207,8 +167,6 @@ export function CheckoutForm() {
                       disabled={isLoading}
                     >
                       {[
-                        { value: 'mpesa', label: 'M-Pesa' },
-                        { value: 'airtel', label: 'Airtel Money' },
                         { value: 'card', label: 'Credit/Debit Card' },
                       ].map(option => (
                         <FormItem key={option.value} className="flex items-center space-x-3 space-y-0 p-4 border rounded-md has-[[data-state=checked]]:border-primary">
