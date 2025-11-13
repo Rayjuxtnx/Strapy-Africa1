@@ -25,6 +25,7 @@ import { Separator } from '../ui/separator';
 import { useAuth } from '@/context/auth-context';
 import { useEffect, useState } from 'react';
 import { Loader2 } from 'lucide-react';
+import { Order } from '@/lib/types';
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters.'),
@@ -68,16 +69,37 @@ export function CheckoutForm() {
 
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsLoading(true);
-    console.log('Order submitted:', values);
     
     // Simulate order processing
     setTimeout(() => {
+      const orderId = `order_${Date.now()}`;
+      const newOrder: Order = {
+        id: orderId,
+        customer: values,
+        items: cartItems,
+        total: cartTotal,
+        date: new Date().toISOString(),
+      };
+
+      try {
+        localStorage.setItem(orderId, JSON.stringify(newOrder));
+      } catch (error) {
+        console.error("Could not save order to localStorage", error);
+        toast({
+          variant: "destructive",
+          title: "Error",
+          description: "Could not save order details. Please try again.",
+        });
+        setIsLoading(false);
+        return;
+      }
+
       toast({
         title: 'Order Placed!',
-        description: 'Thank you for your purchase. Your order is being processed.',
+        description: 'Thank you for your purchase. Your receipt is being generated.',
       });
       clearCart();
-      router.push('/checkout/success');
+      router.push(`/checkout/receipt/${orderId}`);
       setIsLoading(false);
     }, 1500);
   }

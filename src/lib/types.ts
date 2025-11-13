@@ -43,3 +43,16 @@ export type Brand = {
   name: string;
   logoImageId: string;
 }
+
+export type Order = {
+  id: string;
+  customer: {
+    name: string;
+    email: string;
+    phone: string;
+    address: string;
+  };
+  items: CartItem[];
+  total: number;
+  date: string;
+}
