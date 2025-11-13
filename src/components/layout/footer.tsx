@@ -23,7 +23,7 @@ export function Footer() {
           <div className="md:col-span-2 lg:col-span-2 space-y-4">
             <Logo />
             <p className="text-sm max-w-sm">
-              Your premier destination for curated collections of fashion, home goods, and accessories.
+              Your premier destination for authentic African fashion, home goods, and accessories.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Curated Finds. All rights reserved.
+            &copy; {new Date().getFullYear()} Strapy Africa. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
             {socialLinks.map(social => (

@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export const metadata = {
     title: "Contact Us",
-    description: "Get in touch with Curated Finds or chat with our AI assistant.",
+    description: "Get in touch with Strapy Africa or chat with our AI assistant.",
 };
 
 export default function ContactPage() {
@@ -22,7 +22,7 @@ export default function ContactPage() {
                         <Mail className="h-8 w-8 text-primary"/>
                     </div>
                     <h3 className="font-bold text-lg mt-4">Email</h3>
-                    <p className="text-muted-foreground">support@curatedfinds.com</p>
+                    <p className="text-muted-foreground">support@strapy.africa</p>
                 </div>
                 <div className="flex flex-col items-center">
                      <div className="p-4 bg-primary/10 rounded-full">

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export const metadata = {
     title: "Careers",
-    description: "Join the team at Curated Finds and help us shape the future of curated online retail.",
+    description: "Join the team at Strapy Africa and help us shape the future of curated online retail.",
 };
 
 export default function CareersPage() {
@@ -12,7 +12,7 @@ export default function CareersPage() {
             <div className="text-center max-w-3xl mx-auto">
                 <h1 className="text-4xl md:text-5xl font-headline font-bold">Join Our Team</h1>
                 <p className="mt-4 text-muted-foreground">
-                    At Curated Finds, we are passionate about bringing unique, high-quality products to our customers. We are a team of creatives, innovators, and problem-solvers. If you are driven by passion and excellence, we would love to hear from you.
+                    At Strapy Africa, we are passionate about bringing unique, high-quality products to our customers. We are a team of creatives, innovators, and problem-solvers. If you are driven by passion and excellence, we would love to hear from you.
                 </p>
             </div>
 
@@ -31,7 +31,7 @@ export default function CareersPage() {
                                 There are currently no open positions, but we're growing fast! If you believe you have what it takes to be a part of our team, we'd love to see your resume.
                             </p>
                             <Button asChild className="mt-6">
-                                <a href="mailto:careers@curatedfinds.com">
+                                <a href="mailto:careers@strapy.africa">
                                     Send Us Your Resume
                                 </a>
                             </Button>

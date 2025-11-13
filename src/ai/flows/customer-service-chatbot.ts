@@ -30,7 +30,7 @@ const prompt = ai.definePrompt({
   name: 'customerServiceChatbotPrompt',
   input: {schema: CustomerServiceChatbotInputSchema},
   output: {schema: CustomerServiceChatbotOutputSchema},
-  prompt: `You are a customer service chatbot for Curated Finds, an online store.
+  prompt: `You are a customer service chatbot for Strapy Africa, an online store.
 
   Answer the user's query based on the following FAQs.
 

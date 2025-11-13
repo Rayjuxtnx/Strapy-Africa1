@@ -49,7 +49,7 @@ export function Navbar() {
             <nav className="grid gap-6 text-lg font-medium">
               <Link href="/" className="flex items-center gap-2 text-lg font-semibold mb-4">
                 <Package2 className="h-6 w-6" />
-                <span className="sr-only">Curated Finds</span>
+                <span className="sr-only">Strapy Africa</span>
               </Link>
               {navLinks.map(link =>
                 link.isDropdown && link.items ? (

@@ -169,7 +169,7 @@ export default function ReceiptPage() {
             </div>
 
             <div className="text-center text-xs text-muted-foreground pt-8">
-                <p>Thank you for shopping with Curated Finds. If you have any questions, please contact support@curatedfinds.com.</p>
+                <p>Thank you for shopping with Strapy Africa. If you have any questions, please contact support@strapy.africa.</p>
             </div>
         </CardContent>
       </Card>

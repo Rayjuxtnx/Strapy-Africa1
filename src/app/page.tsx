@@ -25,7 +25,7 @@ export default function Home() {
   const heroSlides = [
     {
       id: 'hero-bg',
-      title: 'Curated Finds',
+      title: 'Strapy Africa',
       subtitle: 'Discover unique collections, hand-picked for the discerning eye.',
       buttonText: 'Shop Now',
       buttonLink: '/collections/fashion',

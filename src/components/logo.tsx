@@ -8,7 +8,7 @@ export function Logo() {
         <Sparkles className="w-5 h-5" />
       </div>
       <span className="font-headline text-2xl font-bold text-primary group-hover:text-primary/90 transition-colors">
-        Curated Finds
+        Strapy Africa
       </span>
     </Link>
   );
