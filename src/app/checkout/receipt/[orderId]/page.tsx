@@ -66,6 +66,12 @@ export default function ReceiptPage() {
   const handlePrint = () => {
     window.print();
   };
+  
+  const paymentMethodLabels = {
+    card: 'Credit/Debit Card',
+    mpesa: 'M-Pesa',
+    paypal: 'PayPal',
+  };
 
   return (
     <div className="container py-12 md:py-24 max-w-4xl mx-auto">
@@ -116,7 +122,7 @@ export default function ReceiptPage() {
                     <h3 className="font-semibold mb-2 text-left sm:text-right">Order Details</h3>
                     <div className="text-muted-foreground text-sm space-y-1 text-left sm:text-right">
                         <p><strong>Order Date:</strong> {new Date(order.date).toLocaleDateString()}</p>
-                        <p><strong>Payment Method:</strong> Credit/Debit Card</p>
+                        <p><strong>Payment Method:</strong> {paymentMethodLabels[order.paymentMethod]}</p>
                     </div>
                 </div>
             </div>

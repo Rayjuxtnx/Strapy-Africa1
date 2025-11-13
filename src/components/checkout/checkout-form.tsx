@@ -32,7 +32,7 @@ const formSchema = z.object({
   email: z.string().email('Invalid email address.'),
   phone: z.string().min(10, 'Phone number seems too short.'),
   address: z.string().min(5, 'Address must be at least 5 characters.'),
-  paymentMethod: z.enum(['card'], {
+  paymentMethod: z.enum(['card', 'mpesa', 'paypal'], {
     required_error: 'You need to select a payment method.',
   }),
 });
@@ -75,10 +75,16 @@ export function CheckoutForm() {
       const orderId = `order_${Date.now()}`;
       const newOrder: Order = {
         id: orderId,
-        customer: values,
+        customer: {
+            name: values.name,
+            email: values.email,
+            phone: values.phone,
+            address: values.address,
+        },
         items: cartItems,
         total: cartTotal,
         date: new Date().toISOString(),
+        paymentMethod: values.paymentMethod,
       };
 
       try {
@@ -190,6 +196,8 @@ export function CheckoutForm() {
                     >
                       {[
                         { value: 'card', label: 'Credit/Debit Card' },
+                        { value: 'mpesa', label: 'M-Pesa' },
+                        { value: 'paypal', label: 'PayPal' },
                       ].map(option => (
                         <FormItem key={option.value} className="flex items-center space-x-3 space-y-0 p-4 border rounded-md has-[[data-state=checked]]:border-primary">
                           <FormControl>

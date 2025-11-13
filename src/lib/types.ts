@@ -55,4 +55,5 @@ export type Order = {
   items: CartItem[];
   total: number;
   date: string;
+  paymentMethod: 'card' | 'mpesa' | 'paypal';
 }
