@@ -45,7 +45,7 @@
     {
       "id": "product-clock-1",
       "description": "An Afrocentric wall clock",
-      "imageUrl": "https://images.unsplash.com/photo-1735941053883-529eb7916bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBZnJvY2VudHJpYyUyMGNsb2NrfGVufDB8fHx8MTc2MjQzNDQ3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1735941053883-529eb7916bff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxBZnJvY2VudHJpYyUyMGNsb2NrfGVufDB8fHx8MTc2MjQzNDQ3MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Afrocentric clock"
     },
     {
@@ -57,13 +57,13 @@
     {
       "id": "product-scarf-1",
       "description": "Folded Kikoy fabric",
-      "imageUrl": "https://images.unsplash.com/photo-1666707174499-c5395c2481fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8S2lrb3klMjBmYWJyaWN8ZW58MHx8fHwxNzYyNDM0NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1666707174499-c5395c2481fc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8S2lrb3klMjBmYWJyaWN8ZW58MHx8fHwxNzYyNDM0NDcwfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Kikoy fabric"
     },
     {
       "id": "product-scarf-2",
       "description": "A woman wearing a Leso scarf",
-      "imageUrl": "https://images.unsplash.com/photo-1533560731435-4509459345c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLZXNvJTIwc2NhcmYlMjB3b21hbnxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533560731435-4509459345c2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLZXNvJTIwc2NhcmYlMjB3b21hbnxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Leso scarf"
     },
     {
@@ -75,13 +75,13 @@
     {
       "id": "product-planter-2",
       "description": "An aloe vera plant in a pot",
-      "imageUrl": "https://images.unsplash.com/photo-1509423350717-cde539992359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMGluJTIwYSUyMHBvdHxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1509423350717-cde539992359?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhbG9lJTIwdmVyYSUyMGluJTIwYSUyMHBvdHxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "aloe vera"
     },
     {
       "id": "product-necklace-1",
       "description": "A colorful beaded necklace",
-      "imageUrl": "https://images.unsplash.com/photo-1588444968369-a681de015a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFkZWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1588444968369-a681de015a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFkZWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "beaded necklace"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "product-shirt-1",
       "description": "A man wearing a Kitenge shirt",
-      "imageUrl": "https://images.unsplash.com/photo-1617112520932-92 profesionally-dressed-man-in-traditional-african-clothing?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLaXRlbmdlJTIwc2hpcnQlMjBtYW58ZW58MHx8fHwxNzYyOTE5ODk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1611211081285-bd02a70f8b27?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxidXR0b24lMjBzaGlydHxlbnwwfHx8fDE3NjMwNjU0OTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Kitenge shirt"
     },
     {
@@ -129,19 +129,19 @@
     {
       "id": "brand-evolve",
       "description": "Evolve brand logo with a nature theme",
-      "imageUrl": "https://images.unsplash.com/photo-1662052955282-da15376f3919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjQxNjA3MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662052955282-da15376f3919?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxuYXR1cmUlMjBsb2dvfGVufDB8fHx8MTc2MjQxNjA3MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "nature logo"
     },
     {
       "id": "brand-legacy",
       "description": "Legacy brand logo, classic design",
-      "imageUrl": "https://images.unsplash.com/photo-1533898301026-0a2546b285e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwZGVzaWdufGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533898301026-0a2546b285e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwZGVzaWdufGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "classic design"
     },
     {
       "id": "brand-apex",
       "description": "Apex brand logo, sharp and modern",
-      "imageUrl": "https://images.unsplash.com/photo-1504717821152-66ca3db3ed8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFycCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1504717821152-66ca3db3ed8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFycCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sharp abstract"
     },
     {
