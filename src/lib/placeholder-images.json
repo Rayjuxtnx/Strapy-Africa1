@@ -27,7 +27,7 @@
     {
       "id": "product-tote-1",
       "description": "Front view of the Artisan Leather Tote held by a Black woman",
-      "imageUrl": "https://images.unsplash.com/photo-1586419173400-4decc610b249?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3b21hbiUyMGhhbmRiYWd8ZW58MHx8fHwxNzYyNDM0NDcwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1727524366429-27de8607d5f6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMXx8bGVhdGhlciUyMGNvYXR8ZW58MHx8fHwxNzYzMDY1NDIzfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "woman handbag"
     },
     {
@@ -69,7 +69,7 @@
     {
       "id": "product-planter-1",
       "description": "Set of terracotta planters",
-      "imageUrl": "https://images.unsplash.com/photo-1604464543433-149fe779b779?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZXJyYWNvdHRhJTIwcG90c3xlbnwwfHx8fDE3NjI0MzQ0NzF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1604464543433-149fe779b779?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx0ZXJyYWNvdHRhJTIwcG90c3xlbnwwfHx8fDE3NjI0MzQ0NzF8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "terracotta pots"
     },
     {
@@ -81,7 +81,7 @@
     {
       "id": "product-necklace-1",
       "description": "A colorful beaded necklace",
-      "imageUrl": "https://images.unsplash.com/photo-1588444968369-a681de015a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFkZWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1588444968369-a681de015a97?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiZWFkZWQlMjBuZWNrbGFjZXxlbnwwfHx8fDE3NjI5MTk4OTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "beaded necklace"
     },
     {
@@ -93,7 +93,7 @@
     {
       "id": "product-shirt-1",
       "description": "A man wearing a Kitenge shirt",
-      "imageUrl": "https://images.unsplash.com/photo-1617112520932-92 profesionally-dressed-man-in-traditional-african-clothing?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLaXRlbmdlJTIwc2hpcnQlMjBtYW58ZW58MHx8fHwxNzYyOTE5ODk2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1617112520932-92 profesionally-dressed-man-in-traditional-african-clothing?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxLaXRlbmdlJTIwc2hpcnQlMjBtYW58ZW58MHx8fHwxNzYyOTE5ODk2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Kitenge shirt"
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "brand-momentum",
       "description": "Momentum brand logo, bold and geometric",
-      "imageUrl": "https://images.unsplash.com/photo-1759265844937-04cd4d4ea9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib2xkJTIwZ2VvbWV0cmljfGVufDB8fHx8MTc2MjM1ODkzNXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1759265844937-04cd4d4ea9ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxib2xkJTIwZ2VvbWV0cmljfGVufDB8fHx8MTc2MjM1ODkzNXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bold geometric"
     },
     {
@@ -135,19 +135,19 @@
     {
       "id": "brand-legacy",
       "description": "Legacy brand logo, classic design",
-      "imageUrl": "https://images.unsplash.com/photo-1533898301026-0a2546b285e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwZGVzaWdufGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1533898301026-0a2546b285e7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjbGFzc2ljJTIwZGVzaWdufGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "classic design"
     },
     {
       "id": "brand-apex",
       "description": "Apex brand logo, sharp and modern",
-      "imageUrl": "https://images.unsplash.com/photo-1504717821152-66ca3db3ed8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFycCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1504717821152-66ca3db3ed8e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzaGFycCUyMGFic3RyYWN0fGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sharp abstract"
     },
     {
       "id": "brand-nova",
       "description": "Nova brand logo, bright and futuristic",
-      "imageUrl": "https://images.unsplash.com/photo-1654722439127-0645ad92650b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmlnaHQlMjBmdXR1cmlzdGljfGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1654722439127-0645ad92650b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxicmlnaHQlMjBmdXR1cmlzdGljfGVufDB8fHx8MTc2MjQzMjAwMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bright futuristic"
     }
   ]
